@@ -1,7 +1,6 @@
-package com.microservice.web.controller;
+package com.microservices.user.controller;
 
-
-import com.microservice.web.service.UserService;
+import com.microservice.common.userApi.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,8 +14,8 @@ public class UserController {
     private UserService userService;
 
 
-    @GetMapping("/sayHello")
+    @GetMapping("/userTestMethod")
     public  String  testMethod(){
-        return userService.sayHello();
+        return userService.testMethod();
     }
 }
