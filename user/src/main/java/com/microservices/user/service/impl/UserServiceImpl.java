@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     @Override
-    public String testMethod() {
-        return "hello,world";
+    public String sayHelloUser() {
+        return "hello,user";
     }
 }
