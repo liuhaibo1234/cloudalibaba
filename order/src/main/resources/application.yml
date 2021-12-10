@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: alibaba-service-order
+
+
+  cloud:
+    nacos:
+      discovery:
+       server-addr: 8.142.149.42:8848
+
+
+server:
+  port: 8002
+
